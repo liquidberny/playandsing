@@ -112,6 +112,36 @@ a {
   text-decoration: none;
   padding: 0;
 }
-#top a:hover{
-    color: #17e917;
+#top a:hover {
+  color: #17e917;
+}
+#artist {
+  border-color: #4fcc3eee;
+  background-image: url("/assets/images/grass.png");
+}
+#artist h1,
+h2 {
+  margin-bottom: 1rem;
+  color: #f55e23f5;
+}
+#events {
+  border-color: #f1ff33ee;
+  background-image: url("/assets/images/goldglitter.gif");
+  color: #000000;
+}
+#events h1{
+  padding-bottom: 1rem;
+}
+#events table, th, td{
+  border: 1px solid #f3fd61dc;
+  background-color: #fffb00ee;
+  border-style: outset
+}
+footer{
+  border-width: 5px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-collapse: separate;
+  border-color: #ec3434;
+  background-image: url("/assets/images/037.gif");
 }
