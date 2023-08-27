@@ -7,6 +7,7 @@
     <title>Play&Sing.Net</title>
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/scripts/colorTitle.js"></script>
+    <script src="/scripts/goUp.js"></script>
 </head>
 
 <body>
@@ -112,10 +113,25 @@
         </section>
     </main>
     <footer>
-        <h3>Formulario de contactos</h3>
-        <h5>Contactis adicionales | Redes sociales</h5>
-        <p>Berny Urquijo&copy; 2023</p>    
+        <h3>Formulario de contacto</h3>
+        
+        <form id="contact-form" action="/submit-contact" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+            <button type="submit" style="background-color: #00FF00;">Enviar</button>
+        </form>
+        <p>Berny Urquijo&copy; 2023</p>
     </footer>
+    <button id="go-up" >
+        <img src="/assets/images/upload.svg" alt="up button">
+      </button>
     <center>
         <img src="/assets/images/winxp.gif" alt="windows xp">
     </center>    

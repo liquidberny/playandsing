@@ -145,3 +145,27 @@ footer{
   border-color: #ec3434;
   background-image: url("/assets/images/037.gif");
 }
+
+#go-up{
+  cursor: pointer;
+
+  
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  transition: transform 0.3s ease-in-out;
+
+  border-width: 5px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-collapse: separate;
+  border-color: #e917bc;
+}
+#go-up img {
+  width: 40px;
+  height: auto;
+}
+#go-up:hover {
+  transform: translateY(-10px); /* Mover hacia arriba cuando el cursor esté sobre el botón */
+}
