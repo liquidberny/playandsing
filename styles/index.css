@@ -138,11 +138,46 @@ a {
   border-color: #4fcc3eee;
   background-image: url("/assets/images/grass.png");
 }
-#artist h1,
-h2 {
+.artist-stuff{
+  display: flex;
+}
+.artist-description, .artist-comments{
+width: 50%;
+padding: 0px 1rem;
+}
+.artist-description img{
+width: 100%;
+padding-bottom: 1rem;
+}
+#artist h1,h2,h3 {
   margin-bottom: 1rem;
   color: #f55e23f5;
 }
+.comment{
+  height: 30%;
+  margin: 1rem 0;
+  background-color: #4fcc3eee;
+  display: flex;
+
+  border-width: 5px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-collapse: separate;
+  border-color: #4fcc3eee;
+}
+.comment-img{
+  width: 25%;
+  background-color: #000000;
+}
+.comment-rating{
+  width: 75%;
+  padding: 5px;
+}
+.comment-img img{
+width: 100%;
+height: 100%;}
+
+
 #events {
   border-color: #f1ff33ee;
   background-image: url("/assets/images/goldglitter.gif");
@@ -155,6 +190,38 @@ h2 {
   border: 1px solid #f3fd61dc;
   background-color: #fffb00ee;
   border-style: outset
+}
+.event-list{
+  width: 900px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.event{
+  border: 5px solid #f3fd61dc;
+  background-color: #fffb00ee;
+  border-style: outset;
+  
+  width: 32%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5px;
+}
+.event-image{
+  height: 60%;
+  width: 100%;
+}
+.event-image img{
+  width: 100%;
+height: 100%;
+padding-bottom: 5px;
+}
+.event-details{
+  height: 40%;
+  width: 100%;
+  background-color: #fffb00ee;
 }
 footer{
   border-width: 5px;
