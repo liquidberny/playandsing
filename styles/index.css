@@ -77,7 +77,6 @@ section {
   align-items: center;
 
   padding: 45px 90px;
-  height: 100vh;
   width: 70vw;
 
   border-width: 5px;
@@ -93,7 +92,7 @@ section {
   height: calc(100vh - 230px);
   border-color: #6b0fb6;
   background: url("/assets/images/banner.png") no-repeat center center fixed;
-  background-size:cover;
+  background-size: cover;
   color: #6b0fb6;
   font-size: 40px;
 }
@@ -101,8 +100,7 @@ section {
 #top {
   border-color: #13ace9f5;
   background-image: url("/assets/images/tealsilkbg.jpeg");
-  background-size:65px;
-
+  background-size: 65px;
 }
 #top h1,
 li,
@@ -117,20 +115,20 @@ a {
 #top a:hover {
   color: #17e917;
 }
-#top-3{
+#top-3 {
   display: flex;
   width: 80%;
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 1rem;
 }
-.podium{
+.podium {
   display: flex;
   align-items: center;
 }
 .podium a:hover img {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease; 
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 .podium a:hover p {
   margin-top: 10px; /* Agrega un margen superior cuando el mouse se coloca sobre la imagen */
@@ -139,22 +137,26 @@ a {
   border-color: #4fcc3eee;
   background-image: url("/assets/images/grass.png");
 }
-.artist-stuff{
+.artist-stuff {
   display: flex;
+  margin-bottom: 1rem;
 }
-.artist-description, .artist-comments{
-width: 50%;
-padding: 0px 1rem;
+.artist-description,
+.artist-comments {
+  width: 50%;
+  padding: 0px 1rem;
 }
-.artist-description img{
-width: 100%;
-padding-bottom: 1rem;
+.artist-description img {
+  width: 100%;
+  padding-bottom: 1rem;
 }
-#artist h1,h2,h3 {
+#artist h1,
+h2,
+h3 {
   margin-bottom: 1rem;
   color: #f55e23f5;
 }
-.comment{
+.comment {
   height: 30%;
   margin: 1rem 0;
   background-color: #4fcc3eee;
@@ -166,66 +168,67 @@ padding-bottom: 1rem;
   border-collapse: separate;
   border-color: #4fcc3eee;
 }
-.comment-img{
+.comment-img {
   width: 25%;
   background-color: #000000;
 }
-.comment-rating{
+.comment-rating {
   width: 75%;
   padding: 5px;
 }
-.comment-img img{
-width: 100%;
-height: 100%;}
-
+.comment-img img {
+  width: 100%;
+  height: 100%;
+}
 
 #events {
   border-color: #f1ff33ee;
   background-image: url("/assets/images/goldglitter.gif");
   color: #000000;
 }
-#events h1{
+#events h1 {
   padding-bottom: 1rem;
 }
-#events table, th, td{
+#events table,
+th,
+td {
   border: 1px solid #f3fd61dc;
   background-color: #fffb00ee;
-  border-style: outset
+  border-style: outset;
 }
-.event-list{
-  width: 900px;
-  height: 600px;
+.event-list {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
 }
-.event{
+.event {
   border: 5px solid #f3fd61dc;
   background-color: #fffb00ee;
   border-style: outset;
-  
+
   width: 32%;
-  height: 40%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   margin: 2.5px;
 }
-.event-image{
+.event-image {
   height: 60%;
   width: 100%;
 }
-.event-image img{
+.event-image img {
   width: 100%;
-height: 100%;
-padding-bottom: 5px;
+  height: 100%;
+  padding-bottom: 5px;
 }
-.event-details{
+.event-details {
   height: 40%;
   width: 100%;
   background-color: #fffb00ee;
 }
 
-footer{
+footer {
   border-width: 5px;
   border-spacing: 2px;
   border-style: outset;
@@ -236,10 +239,9 @@ footer{
   text-align: center;
 }
 
-#go-up{
+#go-up {
   cursor: pointer;
 
-  
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -257,11 +259,12 @@ footer{
   height: auto;
 }
 #go-up:hover {
-  transform: translateY(-10px); /* Mover hacia arriba cuando el cursor esté sobre el botón */
+  transform: translateY(
+    -10px
+  ); /* Mover hacia arriba cuando el cursor esté sobre el botón */
 }
 
 @media screen and (max-width: 1440px) {
-
   body {
     font-size: 14px;
   }
@@ -269,25 +272,27 @@ footer{
   section {
     padding: 40px 70px;
   }
-  .turn-invisible{
+  .turn-invisible {
     display: none;
   }
-  #top-3{
+  #top-3 {
     align-items: center;
     justify-content: center;
   }
 
-  .artist-description, .artist-comments{
+  .artist-description,
+  .artist-comments {
     width: 100%;
     padding: 0px 1rem;
-    }
-
+  }
+  .event {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  header > h1{
+  header > h1 {
     font-size: 2rem;
-
   }
   body {
     font-size: 13px;
@@ -305,38 +310,39 @@ footer{
     font-size: 1.125rem;
   }
 
-  .turn-invisible{
+  .turn-invisible {
     display: none;
   }
-  .artist-description, .artist-comments{
+  .artist-description,
+  .artist-comments {
     width: 100%;
     padding: 0px 1rem;
-    }
-    .artist-stuff{
-      flex-direction: column;
-      width: 100%;
-          }
+  }
+  .artist-stuff {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .event {
+    width: 50%;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-  
-  header #name-text{
+  header #name-text {
     width: 300px;
   }
 
-  #page-title > h1{
+  #page-title > h1 {
     font-size: 1rem;
-
   }
-  
+
   nav {
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     height: 56px;
     font-size: 1rem;
   }
-  
 
   nav li {
     padding: 5px 0px;
@@ -348,11 +354,14 @@ footer{
   section {
     padding: 40px px;
   }
-  .turn-invisible{
+  .turn-invisible {
     display: none;
   }
-  .artist-stuff{
-flex-direction: column;
-width: 100%;
-    }
+  .artist-stuff {
+    flex-direction: column;
+    width: 100%;
+  }
+  .event {
+    width: 100%;
+  }
 }
