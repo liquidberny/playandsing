@@ -238,6 +238,9 @@ footer {
 
   text-align: center;
 }
+input, textarea, button, footer>p{
+  margin-bottom: 1rem;
+}
 
 #go-up {
   cursor: pointer;
@@ -262,6 +265,20 @@ footer {
   transform: translateY(
     -10px
   ); /* Mover hacia arriba cuando el cursor esté sobre el botón */
+}
+#social-media a {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+#social-media a:hover {
+  transform: translate(-2px, -2px) rotate(2deg);
 }
 
 @media screen and (max-width: 1440px) {
