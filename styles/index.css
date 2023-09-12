@@ -45,6 +45,8 @@ header h1 {
 header #page-title {
   display: flex;
   width: 50%;
+  min-width: 600px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -346,6 +348,7 @@ input, textarea, button, footer>p{
 }
 
 @media screen and (max-width: 768px) {
+
   header #name-text {
     width: 300px;
   }
